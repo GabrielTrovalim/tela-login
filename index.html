@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Ícones do google
+</head>
+<body>
+    <main><!--Área principal do código-->
+        <section id="login">
+            <div id="img">
+                <!--Área da imagem-->
+            </div>
+
+            <div id="formulario"> <!--Área do formulário-->
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login aqui para poder acessar sua conta e continuar.</p>
+
+                <form action="login.php" method="post"> <!--Parte do formulário-->
+                    <div class="campo"> <!--Parte da caixa e-mail-->
+                        <label for="iusu"><span class="material-icons">person</span></label>
+                        <input type="email" name="usu" id="iusu" required minlength="5" maxlength="30" autocomplete="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="campo"> <!--Recebe a senha-->
+                        <label for="isenha"><span class="material-icons">key</span></label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="30" placeholder="Sua senha">
+                    </div>
+
+                    <input type="submit" value="Entrar" id="entrar">
+                    <a href="lembrar.html" target="_self" rel="next" class="botao">Esqueci a senha &#x2709;</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

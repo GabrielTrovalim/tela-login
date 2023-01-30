@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar senha</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style2.css">
+    <link rel="stylesheet" href="estilos/query2.css">
+    
+</head>
+<body>
+    <main>
+        <section id="lembrar"> <!--Caixa que guarda os outros elementos-->
+            <div id="img">
+                <!--Teste com imagem-->
+            </div>
+
+            <div id="formulario"> <!--Área principal com formulário-->
+                <h1>Recuperar senha</h1>
+                <p>Informe o seu e-mail para recuperar sua senha.</p>
+
+                <form action="recupera.php" method="post"> <!--Formulário-->
+                    <div class="campo">
+                        <label for="iemail"><span class="material-icons">mail</span></label>
+                        <input type="email" name="email" id="iemail" required minlength="5" maxlength="30" autocomplete="email" placeholder="E-mail para recuperação">
+                    </div>
+                    
+                    <input type="submit" value="Enviar" id="enviar">
+                    <a href="#" target="_self" rel="next" class="botao">Redefinir senha</a> <!--Link para página de redefinir-->
+                </form>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

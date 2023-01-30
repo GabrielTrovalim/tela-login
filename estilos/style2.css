@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+:root{
+    --verde: rgb(0, 172, 72);
+    --averde: rgb(0, 150, 150);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, var(--averde), var(--verde));
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#lembrar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 290px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.288);
+    transform: translate(-50%, -50%);
+    transition: height 0.3s, width 0.3s;
+}
+div#formulario{
+    padding: 10px;
+}
+div#formulario h1{
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1.8em;
+    margin: -10px -10px 15px -10px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.24);
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.5);
+    background:blue url('../imagens/paisagem2.jpg') no-repeat center center;
+}
+div#formulario p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+div.campo{
+    background-image: linear-gradient(to right, skyblue, pink);
+    padding: 2px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    width: 100%;
+}
+div.campo span{
+    font-size: 1.6em;
+    transform: translate(0px, 3px);
+}
+input#iemail{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: calc(100% - 33px);
+    transform: translate(0px, -4px);
+}
+input#enviar{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    background-color: rgb(228, 90, 143);
+}
+input#enviar:hover{
+    cursor: pointer;
+    background-color: pink;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.288);
+    transform: translate(0px, -3px);
+}
+a.botao{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(228, 90, 143);
+    text-decoration: none;
+    font-size: 1.1em;
+    color: black;
+}
+a.botao:hover{
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.288);
+    transform: translate(0px, -3px);
+}
